@@ -6,6 +6,9 @@ recipes:
     - applications::evernote
 
 attributes:
+  brew:
+    cask_apps:
+      - skitch
   git:
     name: Ryan Sonnek
     email: ryan@codecrate.com
