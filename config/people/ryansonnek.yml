@@ -9,6 +9,7 @@ attributes:
   brew:
     cask_apps:
       - skitch
+      - jing
   git:
     name: Ryan Sonnek
     email: ryan@codecrate.com
