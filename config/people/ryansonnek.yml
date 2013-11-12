@@ -11,6 +11,14 @@ attributes:
       - evernote
       - skitch
       - jing
+  sublime_text:
+    preferences:
+      font_size: 14
+      ignored_packages: []
+      remember_open_files: false
+      tab_size: 2
+      vintage_start_in_command_mode: true
+      vintage_use_clipboard: true
   git:
     name: Ryan Sonnek
     email: ryan@codecrate.com
