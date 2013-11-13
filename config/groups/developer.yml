@@ -1,5 +1,8 @@
 recipes:
   global:
+    # general tools
+    - applications::skype
+
     # general development
     - dotfiles::bash_it
     - applications::git
