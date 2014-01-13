@@ -4,20 +4,18 @@
 
 Read about this project and it's values and goals in this blog post: [http://vanderveer.be/blog/2013/04/14/presenting-kitchenplan/](http://vanderveer.be/blog/2013/04/14/presenting-kitchenplan/)
 
+A recent usage guide is avalilable at [http://vanderveer.be/setting-up-my-perfect-dev-environment-on-osx-10-9-using-chef-kitchenplan/](http://vanderveer.be/setting-up-my-perfect-dev-environment-on-osx-10-9-using-chef-kitchenplan/)
+
 ## Using Kitchenplan
 
-### As a Kitchenplan maintainer for your organisation or for personal use.
+I myself will use this version, so you can learn from my config files. But you best start of by forking this repo. You will need it to store your configuration files. See the Custom Repository section for more info.
 
-I myself will use this version, so you can learn from my config files. But you best start of by forking this repo. You will need it to store your configuration files. [If you want to make it private, read up on how Boxen suggest you do this](https://github.com/boxen/our-boxen#bootstrapping)
-
-### Getting started as a user
-
-To get started, install the latest XCode (5.0.1 at this point) and the latest CLT from Apple. Take care, you neet BOTH! This release is fully compatible with OSX 10.9 Mavericks.
+On OSX 10.8 Mountain Lion you should install XCode and the Command Line Tools from within XCode before you start. For 10.9 Mavericks the script will prompt you to install the Command Line Tools automatically.
 
 Now, to get Kitchenplan on your computer, run the following commands:
 
 ```bash
-$ ruby -e "$(curl -fsSL https://raw.github.com/kitchenplan/kitchenplan/master/go)"
+ruby -e "$(curl -fsSL https://raw.github.com/kitchenplan/kitchenplan/master/go)"
 ```
 
 ### Custom Repository
@@ -33,9 +31,9 @@ $ ruby -e "$(curl -fsSL https://raw.github.com/kitchenplan/kitchenplan/master/go
 
 ### Custom Recipes
 
-Before you run the ```./kitchenplan``` command, first create a custom config file. The config system will always start of with ```default.yml```. This will contain the recipes for every person in your organisation. Next it it will look at the file ```yourusername.yml``` (with the username logged in on the computer as yourusername) for your custom settings. Ofcourse there will be a lot of shared config when your organisation has departments of different types of personel. So you can define group config files and assign one or more groups to a user. The ```roderik.yml``` ([found here](https://github.com/kitchenplan/kitchenplan/blob/master/config/people/roderik.yml)) is my personal config file and it will fall back to this config if you don't have a personal file.
+Before you run the commadn above, or manually run the```./kitchenplan``` command, you should first create a custom config file. The config system will always start off with ```default.yml```. This will contain the recipes for every person in your organisation. Next it it will look at the file ```yourusername.yml``` (with the username logged in on the computer as yourusername) for your custom settings. Ofcourse there will be a lot of shared config when your organisation has departments of different types of personel. So you can define group config files and assign one or more groups to a user. The ```roderik.yml``` ([found here](https://github.com/kitchenplan/kitchenplan/blob/master/config/people/roderik.yml)) is my personal config file and it will fall back to this config if you don't have a personal file.
 
-When you are done with that, run ```kitchenplan``` and wait for a while. After the command finishes, reboot your computer and you are good to go.
+When you are done with that, run the go script or run ```kitchenplan``` manually and wait for a while. After the command finishes, reboot your computer and you are good to go.
 
 ### Command line tools
 
@@ -45,8 +43,7 @@ There are some useful command line options, run ```kitchenplan -d``` or look her
 Usage: kitchenplan [options]
     -d, --debug                      Show debug information
     -c, --update-cookbooks           Update the Chef cookbooks
-        --[no-]soloist               Run soloist (defaults to yes)
-        --[no-]update                Run the kitchenplan update (defaults to yes)
+        --[no-]chef                  Run chef (defaults to yes)
 
 Common options:
     -h, --help                       Show this message
@@ -61,8 +58,11 @@ We are running this project in production for both OSX and Ubuntu development ma
 
 Fork and send pull requests or just idea's and issues via the issue tracker. If you need a new recipe, fork the chef-* repo's and change the url in the Cheffile to make it fetch your version. Add it and send a pull request. For now we support OSX and the debian family (only tested on Ubuntu). Other operating systems are welcome!
 
-More questions, ping me at [Twitter @r0derik](http://twitter.com/r0derik).
+More questions, ping me at [Twitter @r0derik](http://twitter.com/r0derik) or visit our [HipChat channel](https://www.hipchat.com/gTkMJo2Ag).
 
 ### Acknowledgements
 
 This project is inspired and built by using components and idea's from: Boxen, pivotal_workstation, Opscode cookbooks, and more. Please take any imitation as a the highest form of flattery. If you feel the source or acknowledgements are not sufficient, please let me know how you want it to be resolved.
+
+[![Analytics](https://ga-beacon.appspot.com/UA-46288146-2/kitchenplan/kitchenplan)](https://github.com/igrigorik/ga-beacon)
+
