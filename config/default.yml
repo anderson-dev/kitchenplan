@@ -29,7 +29,6 @@ recipes:
 
     # system utilities
     - osxdefaults::enable_assistive_devices
-    - applications::sizeup
 
 attributes:
   osxdefaults:

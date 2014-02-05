@@ -11,6 +11,7 @@ attributes:
       - evernote
       - skitch
       - jing
+      - sizeup
   sublime_text:
     preferences:
       font_size: 14
