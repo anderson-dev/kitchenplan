@@ -20,8 +20,6 @@ recipes:
 
     # development tools
     - applications::sublime_text_3
-    - applications::google-chrome
-    - applications::firefox
     - applications::github_for_mac
     - applications::mou
 

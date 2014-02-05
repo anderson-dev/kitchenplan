@@ -26,9 +26,11 @@ recipes:
     - osxdefaults::menu_show_clock_with_date
     - osxdefaults::enable_remote_desktop
     - osxdefaults::set_computer_name
-
-    # system utilities
     - osxdefaults::enable_assistive_devices
+
+    # basic applications
+    - applications::google-chrome
+    - applications::firefox
 
 attributes:
   osxdefaults:
