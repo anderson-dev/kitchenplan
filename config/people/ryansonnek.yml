@@ -3,15 +3,15 @@ groups:
 
 recipes:
   global:
+    - applications::sizeup
+    - applications::evernote
     - applications::cask_apps
 
 attributes:
   brew:
     cask_apps:
-      - evernote
       - skitch
       - jing
-      - sizeup
   sublime_text:
     preferences:
       font_size: 14
